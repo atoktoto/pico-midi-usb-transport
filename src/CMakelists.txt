@@ -1,0 +1,10 @@
+add_library(pico-midi-usb INTERFACE)
+target_include_directories(pico-midi-usb INTERFACE
+        src
+        )
+
+target_link_libraries(pico-midi-usb INTERFACE
+        pico_stdlib
+        tinyusb_host
+        arduino-midi
+        )

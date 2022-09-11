@@ -20,15 +20,6 @@ target_include_directories(arduino-midi
         PUBLIC lib/arduino_midi_library/src
         )
 
-add_library(pico-midi-usb INTERFACE)
-target_include_directories(pico-midi-usb INTERFACE
-        src
-)
-target_link_libraries(pico-midi-usb INTERFACE
-        pico_stdlib
-        tinyusb_host
-        arduino-midi
-)
-
+add_subdirectory(src)
 add_subdirectory(examples)
 
