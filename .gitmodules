@@ -1,0 +1,3 @@
+[submodule "lib/arduino_midi_library"]
+	path = lib/arduino_midi_library
+	url = https://github.com/FortySevenEffects/arduino_midi_library.git
